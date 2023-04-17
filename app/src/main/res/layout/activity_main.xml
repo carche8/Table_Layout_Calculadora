@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:onClick="Operaciones"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/tv1"
+        android:layout_width="401dp"
+        android:layout_height="165dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="5dp"
+        android:background="#DAE1BB"
+        android:maxLength="10"
+        android:maxLines="1"
+        android:text="0"
+        android:textAlignment="textStart"
+        android:textSize="80sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="135dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginTop="174dp"
+        android:layout_marginBottom="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout3"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/tv1">
+
+        <Button
+            android:id="@+id/siete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#83B17D"
+            android:maxWidth="340dp"
+            android:onClick="Operaciones"
+            android:text="7" />
+
+        <Button
+            android:id="@+id/cuatro"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#83B17D"
+            android:onClick="Operaciones"
+            android:text="4" />
+
+        <Button
+            android:id="@+id/uno"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#83B17D"
+            android:onClick="Operaciones"
+            android:text="1" />
+
+        <Button
+            android:id="@+id/sumar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#83B17D"
+            android:onClick="Operaciones"
+            android:text="+" />
+
+        <Button
+            android:id="@+id/multiplicar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#83B17D"
+            android:onClick="Operaciones"
+            android:text="*" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="135dp"
+        android:layout_height="238dp"
+        android:layout_marginStart="142dp"
+        android:layout_marginTop="174dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout"
+        app:layout_constraintTop_toTopOf="@+id/tv1">
+
+        <Button
+            android:id="@+id/ocho"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#83B17D"
+            android:onClick="Operaciones"
+            android:text="8" />
+
+        <Button
+            android:id="@+id/cinco"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#83B17D"
+            android:onClick="Operaciones"
+            android:text="5" />
+
+        <Button
+            android:id="@+id/dos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#83B17D"
+            android:onClick="Operaciones"
+            android:text="2" />
+
+        <Button
+            android:id="@+id/cero"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#83B17D"
+            android:onClick="Operaciones"
+            android:text="0" />
+
+        <Button
+            android:id="@+id/igual"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#83B17D"
+            android:text="@string/igual" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="119dp"
+        android:layout_height="240dp"
+        android:layout_marginStart="140dp"
+        android:layout_marginTop="173dp"
+        android:orientation="vertical"
+        app:layout_constraintStart_toStartOf="@+id/linearLayout2"
+        app:layout_constraintTop_toTopOf="@+id/tv1">
+
+        <Button
+            android:id="@+id/nueve"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#83B17D"
+            android:onClick="Operaciones"
+            android:text="9" />
+
+        <Button
+            android:id="@+id/seis"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#83B17D"
+            android:onClick="Operaciones"
+            android:text="6" />
+
+        <Button
+            android:id="@+id/tres"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#83B17D"
+            android:onClick="Operaciones"
+            android:text="3" />
+
+        <Button
+            android:id="@+id/restar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#83B17D"
+            android:onClick="Operaciones"
+            android:text="-" />
+
+        <Button
+            android:id="@+id/dividir"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#83B17D"
+            android:onClick="Operaciones"
+            android:text="/" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="402dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="4sp"
+        android:layout_marginTop="241dp"
+        android:orientation="horizontal"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/linearLayout2">
+
+        <Button
+            android:id="@+id/restaurar"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:backgroundTint="#83B17D"
+            android:onClick="Restaurar"
+            android:text="Restaurar" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_numero1"
+        android:layout_width="74dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="108dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/tv_numero2"
+        android:layout_width="74dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="208dp"
+        android:layout_marginBottom="108dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_numero1" />
+
+    <TextView
+        android:id="@+id/tv_resultado"
+        android:layout_width="65dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="88dp"
+        android:layout_marginBottom="108dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/tv_numero2" />
+
+    <TextView
+        android:id="@+id/tv_signo"
+        android:layout_width="68dp"
+        android:layout_height="42dp"
+        android:text="TextView"
+        tools:layout_editor_absoluteX="146dp"
+        tools:layout_editor_absoluteY="581dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
